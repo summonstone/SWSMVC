@@ -1,41 +1,32 @@
 package com.sws.model;
 
+import java.util.Date;
+
 public class MemberVO {
-	private int num;
 	private String id;
 	private String pwd;
 	private String name;
-	private String email;
+	private String gender;
+	private int birthday;
 	private String phone;
-	private int birth;
-	private int hit;
-	
+	private Date regdate;
+	private String email;
+
 	public MemberVO() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	
 
-	public MemberVO(int num, String id, String pwd, String name, String email, String phone, int birth, int hit) {
+	public MemberVO(String id, String pwd, String name, String gender, int birthday, String phone, Date regdate,
+			String email) {
 		super();
-		this.num = num;
 		this.id = id;
 		this.pwd = pwd;
 		this.name = name;
-		this.email = email;
+		this.gender = gender;
+		this.birthday = birthday;
 		this.phone = phone;
-		this.birth = birth;
-		this.hit = hit;
-	}
-
-
-
-	public int getNum() {
-		return num;
-	}
-
-	public void setNum(int num) {
-		this.num = num;
+		this.regdate = regdate;
+		this.email = email;
 	}
 
 	public String getId() {
@@ -62,12 +53,20 @@ public class MemberVO {
 		this.name = name;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getGender() {
+		return gender;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public int getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(int birthday) {
+		this.birthday = birthday;
 	}
 
 	public String getPhone() {
@@ -78,22 +77,20 @@ public class MemberVO {
 		this.phone = phone;
 	}
 
-	public int getBirth() {
-		return birth;
+	public Date getRegdate() {
+		return regdate;
 	}
 
-	public void setBirth(int birth) {
-		this.birth = birth;
+	public void setRegdate(Date regdate) {
+		this.regdate = regdate;
 	}
 
-	public int getHit() {
-		return hit;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setHit(int hit) {
-		this.hit = hit;
+	public void setEmail(String email) {
+		this.email = email;
 	}
-	
-	
 
 }
