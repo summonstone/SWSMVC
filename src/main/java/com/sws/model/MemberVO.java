@@ -7,7 +7,7 @@ public class MemberVO {
 	private String pwd;
 	private String name;
 	private String gender;
-	private int birthday;
+	private String birthday;
 	private String phone;
 	private Date regdate;
 	private String email;
@@ -16,7 +16,7 @@ public class MemberVO {
 		// TODO Auto-generated constructor stub
 	}
 
-	public MemberVO(String id, String pwd, String name, String gender, int birthday, String phone, Date regdate,
+	public MemberVO(String id, String pwd, String name, String gender, String birthday, String phone, Date regdate,
 			String email) {
 		super();
 		this.id = id;
@@ -61,11 +61,11 @@ public class MemberVO {
 		this.gender = gender;
 	}
 
-	public int getBirthday() {
+	public String getBirthday() {
 		return birthday;
 	}
 
-	public void setBirthday(int birthday) {
+	public void setBirthday(String birthday) {
 		this.birthday = birthday;
 	}
 

@@ -10,7 +10,7 @@
 	<div>
 		<table class='table table-hover'>
 			<tr>
-				<th>번호</th>
+				<th></th>
 				<th>제목</th>
 				<th>작성자</th>
 				<th>작성일</th>

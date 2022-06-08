@@ -13,7 +13,7 @@ import com.sws.controller.Controller;
 
 @WebServlet("*.do")
 public class MemberFrontControlelr extends HttpServlet {
-	private static final long serialVwersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response)
@@ -41,6 +41,7 @@ public class MemberFrontControlelr extends HttpServlet {
 				response.sendRedirect(nextPage.split(":")[1]);
 			} else {
 				RequestDispatcher rd = request.getRequestDispatcher(ViewResolver.makeView(nextPage));
+				rd.forward(request, response);
 			}
 
 		}

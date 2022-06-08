@@ -19,28 +19,32 @@
 			</tr>
 			<tr>
 				<td>비밀번호</td>
-				<td align="center"><input type="password" name="pass" /></td>
+				<td align="center"><input type="password" name="pwd" /></td>
 			</tr>
 			<tr>
 				<td>이름</td>
 				<td align="center"><input type="text" name="name" /></td>
 			</tr>
 			<tr>
-				<td>나이</td>
-				<td align="center"><input type="text" name="age" /></td>
+				<td>성별</td>
+				<td align="center"><input type="text" name="gender" /></td>
 			</tr>
 			<tr>
-				<td>이메일</td>
-				<td align="center"><input type="text" name="email" /></td>
+				<td>생년월일</td>
+				<td align="center"><input type="text" name="birthday" /></td>
 			</tr>
 			<tr>
 				<td>전화번호</td>
 				<td align="center"><input type="text" name="phone" /></td>
 			</tr>
 			<tr>
-				<td colspan="2" align="center"><input type="submit" value="전송"
-					class="btn btn-success" /> <input type="reset" value="취소"
-					class="btn btn-danger" /></td>
+				<td>이메일</td>
+				<td align="center"><input type="text" name="email" /></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+				<input type="submit" value="전송" class="btn btn-success" /> 
+				<input type="reset" value="취소"	class="btn btn-danger" /></td>
 			</tr>
 		</table>
 	</form>

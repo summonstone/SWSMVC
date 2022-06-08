@@ -5,6 +5,7 @@
 <configuration>
 	<properties resource="com/sws/mybatis/db.properties" />
 	<typeAliases>
+	<typeAlias type="com.sws.model.MemberVO" alias="memberVO"/>
 	</typeAliases>
 
 	<environments default="development">
@@ -19,6 +20,6 @@
 		</environment>
 	</environments>
 	<mappers>
-		<mapper resource="org/mybatis/example/BlogMapper.xml" />
+		<mapper resource="com/sws/mybatis/MemberMapper.xml" />
 	</mappers>
 </configuration>
